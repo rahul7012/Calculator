@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 ">
+            <h1 class="text-center">CALCULATOR</h1>
+            <div class="bg-light p-5 rounded border border-dark text-center">
+
+                <!-- Display -->
+                <input id="resultbox" type="text" class="form-control mb-3 "
+                value="" placeholder="0" readonly>
+
+                <!-- Buttons -->
+                <div class='row g-3'>
+                    <!-- First Row -->
+                    <div class="col-3">
+                        <button onclick="displayContent('7')" class="btn btn-secondary w-100">7</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('8')" class="btn btn-secondary w-100">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('9')" class="btn btn-secondary w-100">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('/')" class="btn btn-danger w-100">/</button>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="col-3">
+                        <button onclick="displayContent('4')" class="btn btn-secondary w-100">4</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('5')" class="btn btn-secondary w-100">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('6')" class="btn btn-secondary w-100">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('*')" class="btn btn-danger w-100">*</button>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="col-3">
+                        <button onclick="displayContent('1')" class="btn btn-secondary w-100">1</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('2')" class="btn btn-secondary w-100">2</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('3')" class="btn btn-secondary w-100">3</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('-')" class="btn btn-danger w-100">-</button>
+                    </div>
+
+                    <!-- Fourth Row -->
+                    <div class="col-3">
+                        <button onclick="displayContent('.')" class="btn btn-secondary w-100">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('0')" class="btn btn-secondary w-100">0</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="removeContent()" class="btn btn-danger w-100">Del</button>
+                    </div>
+                    <div class="col-3">
+                        <button onclick="displayContent('+')" class="btn btn-danger w-100">+</button>
+                    </div>
+
+                    <!--last row-->
+                    <div class="col-6">
+                        <button onclick="clearContent()" class="btn btn-danger w-100">AC</button>
+                    </div>
+                    <div class="col-6">
+                        <button onclick="evalContent('')" class="btn btn-primary w-100">=</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./main.js"></script>
+</html>
